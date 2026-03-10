@@ -1,12 +1,13 @@
 # AI 智能体专家团队（中文版）
 
-> **你的 AI 梦之队** — 从前端开发到安全工程，从小红书运营到抖音策略，每个智能体都是一位拥有独特个性、专业流程和可交付成果的专家。
+> **你的 AI 梦之队** — 从前端开发到区块链安全，从小红书运营到抖音策略，每个智能体都是一位拥有独特个性、专业流程和可交付成果的专家。
 
 [![GitHub stars](https://img.shields.io/github/stars/jnMetaCode/agency-agents-zh?style=social)](https://github.com/jnMetaCode/agency-agents-zh)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://makeapullrequest.com)
 
 > 本项目基于 [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)（MIT 协议）翻译并本土化，新增了中国平台专属智能体。
+> 当前收录 **109 个智能体**（100 个上游翻译 + 9 个中国市场原创）。
 
 ---
 
@@ -55,6 +56,14 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [快速原型师](engineering/engineering-rapid-prototyper.md) | 快速 POC、MVP 开发 | 概念验证、黑客马拉松 |
 | [高级开发者](engineering/engineering-senior-developer.md) | Laravel/Livewire/FluxUI、高端 CSS、Three.js | 高品质 Web 体验 |
 | [移动应用开发者](engineering/engineering-mobile-app-builder.md) | iOS/Android 原生、跨平台框架 | 移动端开发、App 性能优化 |
+| [数据工程师](engineering/engineering-data-engineer.md) | ETL/ELT、数据湖、Spark/dbt | 数据管线、数据仓库 |
+| [技术文档工程师](engineering/engineering-technical-writer.md) | API 文档、开发者文档、docs-as-code | 技术文档、知识库 |
+| [自主优化架构师](engineering/engineering-autonomous-optimization-architect.md) | 自适应系统、自动调优 | 智能运维、自愈系统 |
+| [嵌入式固件工程师](engineering/engineering-embedded-firmware-engineer.md) | RTOS、外设驱动、低功耗设计 | IoT、嵌入式系统 |
+| [故障响应指挥官](engineering/engineering-incident-response-commander.md) | 故障处置、SLO 管理、事后复盘 | 线上故障、应急响应 |
+| [威胁检测工程师](engineering/engineering-threat-detection-engineer.md) | SIEM、威胁狩猎、检测规则 | 安全运营、威胁检测 |
+| [Solidity 智能合约工程师](engineering/engineering-solidity-smart-contract-engineer.md) | Solidity、EVM、Gas 优化、DeFi | 智能合约开发、Web3 |
+| [微信小程序开发者](engineering/engineering-wechat-mini-program-developer.md) ⭐ | WXML/WXSS、微信支付、云开发 | 微信小程序全栈开发 |
 
 ### 设计部
 
@@ -69,6 +78,7 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [图像提示词工程师](design/design-image-prompt-engineer.md) | AI 图像生成、提示词优化 | Midjourney/DALL-E 出图 |
 | [视觉叙事师](design/design-visual-storyteller.md) | 数据可视化、视觉叙事 | 信息图、演示文稿 |
 | [趣味注入师](design/design-whimsy-injector.md) | 微交互、彩蛋、趣味元素 | 产品细节体验提升 |
+| [包容性视觉专家](design/design-inclusive-visuals-specialist.md) | 多元化视觉、无障碍设计 | 包容性设计、全球化视觉 |
 
 ### 营销部
 
@@ -81,6 +91,10 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [小红书运营](marketing/marketing-xiaohongshu-operator.md) ⭐ | 种草笔记、达人合作、爆款内容 | 小红书获客、品牌种草 |
 | [抖音策略师](marketing/marketing-douyin-strategist.md) ⭐ | 短视频策划、算法优化、直播带货 | 抖音增长、短视频营销 |
 | [微信公众号运营](marketing/marketing-wechat-operator.md) ⭐ | 公众号内容、社群运营、裂变增长 | 微信生态营销 |
+| [B站内容策略师](marketing/marketing-bilibili-strategist.md) ⭐ | UP主运营、弹幕文化、中长视频 | B站内容增长、品牌合作 |
+| [快手策略师](marketing/marketing-kuaishou-strategist.md) ⭐ | 下沉市场、老铁文化、直播电商 | 快手运营、社区信任 |
+| [电商运营师](marketing/marketing-ecommerce-operator.md) ⭐ | 淘宝/拼多多/京东、直播带货、大促 | 电商全平台运营 |
+| [百度 SEO 专家](marketing/marketing-baidu-seo-specialist.md) ⭐ | 百度优化、百科/知道/贴吧生态 | 百度搜索营销 |
 | [小红书专家](marketing/marketing-xiaohongshu-specialist.md) | 生活方式内容、趋势策略 | 小红书品牌建设 |
 | [微信公众号管理](marketing/marketing-wechat-official-account.md) | 订阅者运营、内容营销 | 微信公众号增长 |
 | [知乎策略师](marketing/marketing-zhihu-strategist.md) | 知识型内容、思想领袖建设 | 知乎品牌权威 |
@@ -104,6 +118,8 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [增长黑客](marketing/marketing-growth-hacker.md) | 快速获客、病毒循环、实验 | 用户增长、转化优化 |
 | [内容创作者](marketing/marketing-content-creator.md) | 多平台内容、编辑日历 | 内容策略、品牌故事 |
 | [社交媒体策略师](marketing/marketing-social-media-strategist.md) | 跨平台策略、整合营销 | 全渠道社交运营 |
+| [SEO 专家](marketing/marketing-seo-specialist.md) | 搜索引擎优化、技术 SEO | Google SEO、内容优化 |
+| [轮播图增长引擎](marketing/marketing-carousel-growth-engine.md) | 轮播图内容、自动化投放 | 社交媒体轮播素材 |
 
 ### 产品部
 
@@ -114,6 +130,7 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [Sprint 排序师](product/product-sprint-prioritizer.md) | 敏捷规划、功能优先级 | Sprint 规划、资源分配 |
 | [趋势研究员](product/product-trend-researcher.md) | 市场情报、竞品分析 | 市场调研、机会评估 |
 | [反馈分析师](product/product-feedback-synthesizer.md) | 用户反馈分析、洞察提取 | 反馈分析、产品优先级 |
+| [行为助推引擎](product/product-behavioral-nudge-engine.md) | 行为心理学、用户引导 | 用户行为设计、转化提升 |
 
 ### 项目管理部
 
@@ -126,6 +143,7 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [实验追踪员](project-management/project-management-experiment-tracker.md) | A/B 测试、实验管理 | 数据驱动决策 |
 | [工作室制片人](project-management/project-management-studio-producer.md) | 创意项目管理、资源调度 | 内容/创意项目 |
 | [工作室运营](project-management/project-management-studio-operations.md) | 工作室日常运营管理 | 团队运营效率 |
+| [Jira 工作流管家](project-management/project-management-jira-workflow-steward.md) | Jira 配置、工作流优化 | Jira 项目管理 |
 
 ### 测试部
 
@@ -162,13 +180,21 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | 智能体 | 专长 | 适用场景 |
 |--------|------|----------|
 | [智能体编排者](specialized/agents-orchestrator.md) | 多智能体协调、工作流管理 | 复杂项目的多智能体协作 |
-| [提示词工程师](specialized/prompt-engineer.md) | LLM 提示词设计、优化、评测 | 提示词开发、AI 应用优化 |
+| [提示词工程师](specialized/prompt-engineer.md) ⭐ | LLM 提示词设计、优化、评测 | 提示词开发、AI 应用优化 |
 | [身份信任架构师](specialized/agentic-identity-trust.md) | AI 身份验证、信任框架 | AI 系统安全与信任 |
 | [数据分析报告员](specialized/data-analytics-reporter.md) | 数据报告自动化 | 定期数据报告生成 |
 | [数据整合师](specialized/data-consolidation-agent.md) | 多源数据整合、仪表盘 | 数据汇总与可视化 |
 | [LSP 索引工程师](specialized/lsp-index-engineer.md) | 代码智能、语义索引 | 代码导航、IDE 集成 |
 | [报告分发师](specialized/report-distribution-agent.md) | 报告分发、多渠道推送 | 自动化报告分发 |
 | [销售数据提取师](specialized/sales-data-extraction-agent.md) | 销售数据采集、结构化 | CRM 数据处理 |
+| [合规审计师](specialized/compliance-auditor.md) | SOC 2/ISO 27001/HIPAA 合规 | 合规审计、安全认证 |
+| [应付账款智能体](specialized/accounts-payable-agent.md) | 发票处理、付款自动化 | 财务流程自动化 |
+| [身份图谱操作员](specialized/identity-graph-operator.md) | 身份解析、多源匹配 | 用户身份治理 |
+| [文化智能策略师](specialized/specialized-cultural-intelligence-strategist.md) | 文化洞察、跨文化设计 | 全球化产品、本地化策略 |
+| [开发者布道师](specialized/specialized-developer-advocate.md) | 开发者关系、DX 工程 | 开发者社区、技术推广 |
+| [模型 QA 专家](specialized/specialized-model-qa.md) | ML 模型审计、质量验证 | 模型上线前检查 |
+| [ZK 管家](specialized/zk-steward.md) | Zettelkasten 知识管理 | 知识库构建、笔记系统 |
+| [区块链安全审计师](specialized/blockchain-security-auditor.md) | 智能合约审计、漏洞检测 | 合约安全、DeFi 审计 |
 
 ### 空间计算部
 
@@ -182,6 +208,54 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [XR 沉浸式开发者](spatial-computing/xr-immersive-developer.md) | WebXR、沉浸式体验 | VR/AR 应用开发 |
 | [XR 座舱交互专家](spatial-computing/xr-cockpit-interaction-specialist.md) | 座舱 UI、多模态交互 | 汽车/航空 XR 交互 |
 | [终端集成专家](spatial-computing/terminal-integration-specialist.md) | 终端模拟、系统集成 | 空间计算终端工具 |
+
+### 游戏开发部
+
+从独立游戏到 3A 大作，全引擎覆盖。
+
+**通用：**
+
+| 智能体 | 专长 | 适用场景 |
+|--------|------|----------|
+| [游戏设计师](game-development/game-designer.md) | 游戏机制、系统设计、平衡性 | 游戏核心玩法设计 |
+| [关卡设计师](game-development/level-designer.md) | 关卡布局、节奏控制、空间叙事 | 关卡设计、场景构建 |
+| [叙事设计师](game-development/narrative-designer.md) | 剧情设计、对话系统、世界观 | 游戏剧情、互动叙事 |
+| [技术美术](game-development/technical-artist.md) | Shader、渲染管线、美术工具 | 画面效果、性能优化 |
+| [游戏音频工程师](game-development/game-audio-engineer.md) | 音效设计、音频引擎、空间音频 | 游戏音效、配乐 |
+
+**Unity：**
+
+| 智能体 | 专长 | 适用场景 |
+|--------|------|----------|
+| [Unity 架构师](game-development/unity/unity-architect.md) | Unity 架构、ECS、性能优化 | Unity 项目架构 |
+| [Unity 编辑器工具开发者](game-development/unity/unity-editor-tool-developer.md) | 编辑器扩展、自定义工具 | Unity 工具链开发 |
+| [Unity 多人游戏工程师](game-development/unity/unity-multiplayer-engineer.md) | Netcode、同步、网络架构 | Unity 联机游戏 |
+| [Unity Shader Graph 美术师](game-development/unity/unity-shader-graph-artist.md) | Shader Graph、URP/HDRP | Unity 视觉效果 |
+
+**Unreal Engine：**
+
+| 智能体 | 专长 | 适用场景 |
+|--------|------|----------|
+| [Unreal 多人游戏架构师](game-development/unreal-engine/unreal-multiplayer-architect.md) | Replication、网络同步 | UE 联机架构 |
+| [Unreal 系统工程师](game-development/unreal-engine/unreal-systems-engineer.md) | Gameplay 框架、C++ 系统 | UE 核心系统开发 |
+| [Unreal 技术美术](game-development/unreal-engine/unreal-technical-artist.md) | 材质、Niagara、渲染管线 | UE 画面与性能 |
+| [Unreal 世界构建师](game-development/unreal-engine/unreal-world-builder.md) | 开放世界、地形、关卡串流 | UE 场景构建 |
+
+**Godot：**
+
+| 智能体 | 专长 | 适用场景 |
+|--------|------|----------|
+| [Godot 游戏脚本开发者](game-development/godot/godot-gameplay-scripter.md) | GDScript、场景树、信号系统 | Godot 游戏逻辑 |
+| [Godot 多人游戏工程师](game-development/godot/godot-multiplayer-engineer.md) | MultiplayerAPI、网络同步 | Godot 联机游戏 |
+| [Godot Shader 开发者](game-development/godot/godot-shader-developer.md) | Godot Shader Language、视觉效果 | Godot 画面效果 |
+
+**Roblox Studio：**
+
+| 智能体 | 专长 | 适用场景 |
+|--------|------|----------|
+| [Roblox 虚拟形象创作者](game-development/roblox-studio/roblox-avatar-creator.md) | 虚拟形象、UGC 资产 | Roblox 角色设计 |
+| [Roblox 体验设计师](game-development/roblox-studio/roblox-experience-designer.md) | 体验设计、游戏循环 | Roblox 游戏设计 |
+| [Roblox 系统脚本工程师](game-development/roblox-studio/roblox-systems-scripter.md) | Luau 脚本、数据存储 | Roblox 游戏开发 |
 
 ### 战略部
 
@@ -201,13 +275,18 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 
 ## 中国市场原创智能体
 
-以下智能体不是翻译，是专门为中国平台做的：
+以下智能体不是翻译，是专门为中国平台和市场做的：
 
-| 智能体 | 平台 | 特色 |
-|--------|------|------|
+| 智能体 | 平台/领域 | 特色 |
+|--------|-----------|------|
 | [小红书运营](marketing/marketing-xiaohongshu-operator.md) | 小红书 | 种草笔记、达人合作、爆款公式 |
 | [抖音策略师](marketing/marketing-douyin-strategist.md) | 抖音 | 短视频策划、算法逻辑、直播话术 |
 | [微信公众号运营](marketing/marketing-wechat-operator.md) | 微信 | 内容运营、社群裂变、私域流量 |
+| [B站内容策略师](marketing/marketing-bilibili-strategist.md) | 哔哩哔哩 | UP主运营、弹幕文化、中长视频策略 |
+| [快手策略师](marketing/marketing-kuaishou-strategist.md) | 快手 | 下沉市场、老铁文化、直播电商 |
+| [电商运营师](marketing/marketing-ecommerce-operator.md) | 淘宝/拼多多/京东 | 大促作战、直播带货、跨平台运营 |
+| [百度 SEO 专家](marketing/marketing-baidu-seo-specialist.md) | 百度 | 百度优化、百科/知道/贴吧生态 |
+| [微信小程序开发者](engineering/engineering-wechat-mini-program-developer.md) | 微信 | WXML/WXSS、微信支付、云开发 |
 | [提示词工程师](specialized/prompt-engineer.md) | 通用 | 系统提示词、思维链、评测框架 |
 
 ---
