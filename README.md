@@ -7,7 +7,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://makeapullrequest.com)
 
 > 本项目基于 [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)（MIT 协议）翻译并本土化，新增了中国平台专属智能体。
-> 当前收录 **109 个智能体**（100 个上游翻译 + 9 个中国市场原创）。
+> 当前收录 **125 个智能体**（118 个上游翻译 + 7 个中国市场原创）。
 
 ---
 
@@ -120,6 +120,36 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [社交媒体策略师](marketing/marketing-social-media-strategist.md) | 跨平台策略、整合营销 | 全渠道社交运营 |
 | [SEO 专家](marketing/marketing-seo-specialist.md) | 搜索引擎优化、技术 SEO | Google SEO、内容优化 |
 | [轮播图增长引擎](marketing/marketing-carousel-growth-engine.md) | 轮播图内容、自动化投放 | 社交媒体轮播素材 |
+| [LinkedIn 内容创作专家](marketing/marketing-linkedin-content-creator.md) | LinkedIn 职场内容、B2B 获客 | LinkedIn 品牌建设 |
+
+### 付费媒体部
+
+精准投放，每一分预算都花在刀刃上。
+
+| 智能体 | 专长 | 适用场景 |
+|--------|------|----------|
+| [付费媒体审计师](paid-media/paid-media-auditor.md) | 广告账户审计、预算优化 | 广告效果诊断、降本增效 |
+| [广告创意策略师](paid-media/paid-media-creative-strategist.md) | 广告素材策划、A/B 测试 | 广告创意优化 |
+| [社交广告策略师](paid-media/paid-media-paid-social-strategist.md) | 社交平台广告投放 | Meta/TikTok/LinkedIn 广告 |
+| [PPC 竞价策略师](paid-media/paid-media-ppc-strategist.md) | 搜索竞价、关键词管理 | Google Ads、百度推广 |
+| [程序化广告采买专家](paid-media/paid-media-programmatic-buyer.md) | DSP、RTB、程序化购买 | 程序化广告投放 |
+| [搜索词分析师](paid-media/paid-media-search-query-analyst.md) | 搜索词挖掘、否词优化 | 搜索广告精细化运营 |
+| [追踪与归因专家](paid-media/paid-media-tracking-specialist.md) | 转化追踪、归因模型 | 广告效果衡量、数据打通 |
+
+### 销售部
+
+从线索到成交，让每一单都有章法。
+
+| 智能体 | 专长 | 适用场景 |
+|--------|------|----------|
+| [客户拓展策略师](sales/sales-account-strategist.md) | 大客户拓展、ABM 策略 | 重点客户攻关 |
+| [销售教练](sales/sales-coach.md) | 销售辅导、技能提升 | 团队销售能力建设 |
+| [赢单策略师](sales/sales-deal-strategist.md) | 成交策略、MEDDPICC | 复杂销售推进 |
+| [Discovery 教练](sales/sales-discovery-coach.md) | 需求挖掘、客户洞察 | 销售前期沟通 |
+| [售前工程师](sales/sales-engineer.md) | 技术方案、Demo 演示 | 技术售前支持 |
+| [Outbound 策略师](sales/sales-outbound-strategist.md) | 外呼策略、Cold outreach | 新客户开拓 |
+| [Pipeline 分析师](sales/sales-pipeline-analyst.md) | 销售漏斗、预测分析 | 销售数据分析、预测 |
+| [投标策略师](sales/sales-proposal-strategist.md) | 投标方案、提案撰写 | 招投标、方案竞标 |
 
 ### 产品部
 
@@ -288,6 +318,7 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [百度 SEO 专家](marketing/marketing-baidu-seo-specialist.md) | 百度 | 百度优化、百科/知道/贴吧生态 |
 | [微信小程序开发者](engineering/engineering-wechat-mini-program-developer.md) | 微信 | WXML/WXSS、微信支付、云开发 |
 | [提示词工程师](specialized/prompt-engineer.md) | 通用 | 系统提示词、思维链、评测框架 |
+| [留学规划顾问](specialized/study-abroad-advisor.md) | 教育 | 多国申请策略、选校定位、文书指导 |
 
 ---
 
