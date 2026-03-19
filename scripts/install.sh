@@ -20,6 +20,7 @@
 #   windsurf     -- 复制 .windsurfrules（当前目录）
 #   openclaw     -- 复制到 ~/.openclaw/agency-agents/
 #   qwen         -- 复制 SubAgent 到 .qwen/agents/（项目级）
+#   codex        -- 复制到 .codex/agents/（项目级）
 #   all          -- 安装所有已检测到的工具（默认）
 
 set -euo pipefail
@@ -43,7 +44,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 INTEGRATIONS="$REPO_ROOT/integrations"
 
-ALL_TOOLS=(claude-code copilot antigravity gemini-cli opencode openclaw cursor trae aider windsurf qwen)
+ALL_TOOLS=(claude-code copilot antigravity gemini-cli opencode openclaw cursor trae aider windsurf qwen codex)
 
 # --- 用法 ---
 usage() {
@@ -71,6 +72,7 @@ detect_aider()        { command -v aider >/dev/null 2>&1; }
 detect_openclaw()     { command -v openclaw >/dev/null 2>&1 || [[ -d "${HOME}/.openclaw" ]]; }
 detect_windsurf()     { command -v windsurf >/dev/null 2>&1 || [[ -d "${HOME}/.codeium" ]]; }
 detect_qwen()         { command -v qwen >/dev/null 2>&1 || [[ -d "${HOME}/.qwen" ]]; }
+detect_codex()        { command -v codex >/dev/null 2>&1 || [[ -d "${HOME}/.codex" ]]; }
 
 is_detected() {
   case "$1" in
@@ -85,6 +87,7 @@ is_detected() {
     aider)       detect_aider       ;;
     windsurf)    detect_windsurf    ;;
     qwen)        detect_qwen        ;;
+    codex)       detect_codex       ;;
     *)           return 1 ;;
   esac
 }
@@ -101,6 +104,7 @@ tool_label() {
     aider)       printf "%-14s  %s" "Aider"        "(CONVENTIONS.md)"       ;;
     windsurf)    printf "%-14s  %s" "Windsurf"     "(.windsurfrules)"       ;;
     qwen)        printf "%-14s  %s" "Qwen Code"    "(~/.qwen/agents)"       ;;
+    codex)       printf "%-14s  %s" "Codex CLI"    "(.codex/agents)"        ;;
   esac
 }
 
@@ -291,6 +295,25 @@ install_qwen() {
   warn "提示: 在 Qwen Code 中运行 '/agents manage' 刷新，或重启会话"
 }
 
+install_codex() {
+  local src="$INTEGRATIONS/codex/agents"
+  local dest="${PWD}/.codex/agents"
+  local count=0
+
+  [[ -d "$src" ]] || { err "integrations/codex 不存在。请先运行 convert.sh --tool codex"; return 1; }
+
+  mkdir -p "$dest"
+
+  local f
+  while IFS= read -r -d '' f; do
+    cp "$f" "$dest/"
+    (( count++ )) || true
+  done < <(find "$src" -maxdepth 1 -name "*.toml" -print0)
+
+  ok "Codex CLI: $count 个智能体 -> $dest"
+  warn "Codex CLI: 项目级安装。请在项目根目录运行。"
+}
+
 install_tool() {
   case "$1" in
     claude-code) install_claude_code ;;
@@ -304,6 +327,7 @@ install_tool() {
     aider)       install_aider       ;;
     windsurf)    install_windsurf    ;;
     qwen)        install_qwen        ;;
+    codex)       install_codex       ;;
   esac
 }
 

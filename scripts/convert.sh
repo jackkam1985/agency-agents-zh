@@ -18,6 +18,7 @@
 #   windsurf     — 单文件 .windsurfrules for Windsurf
 #   openclaw     — OpenClaw SOUL.md 文件 (openclaw_workspace/<agent>/SOUL.md)
 #   qwen         — Qwen Code SubAgent 文件 (~/.qwen/agents/*.md)
+#   codex        — OpenAI Codex CLI agent 文件 (.codex/agents/*.toml)
 #   all          — 所有工具（默认）
 #
 # 输出到仓库根目录下的 integrations/<tool>/。
@@ -333,6 +334,32 @@ HEREDOC
   fi
 }
 
+convert_codex() {
+  local file="$1"
+  local name description slug outfile body
+
+  name="$(get_field "name" "$file")"
+  description="$(get_field "description" "$file")"
+  slug="$(slugify_from_file "$file")"
+  body="$(get_body "$file")"
+
+  outfile="$OUT_DIR/codex/agents/${slug}.toml"
+  mkdir -p "$OUT_DIR/codex/agents"
+
+  # Codex CLI agent 格式：TOML 文件
+  # 需要转义 body 中的三引号（极罕见但防御性处理）
+  local escaped_body
+  escaped_body="$(echo "$body" | sed 's/"""/\\"""/' )"
+
+  cat > "$outfile" <<HEREDOC
+name = "${slug}"
+description = "${description}"
+developer_instructions = """
+${escaped_body}
+"""
+HEREDOC
+}
+
 # Aider 和 Windsurf 是单文件格式，先累积再统一写入
 AIDER_TMP="$(mktemp)"
 WINDSURF_TMP="$(mktemp)"
@@ -428,6 +455,7 @@ run_conversions() {
         trae)        convert_trae        "$file" ;;
         openclaw)    convert_openclaw    "$file" ;;
         qwen)        convert_qwen        "$file" ;;
+        codex)       convert_codex       "$file" ;;
         aider)       accumulate_aider    "$file" ;;
         windsurf)    accumulate_windsurf "$file" ;;
       esac
@@ -454,7 +482,7 @@ main() {
     esac
   done
 
-  local valid_tools=("antigravity" "gemini-cli" "opencode" "cursor" "trae" "aider" "windsurf" "openclaw" "qwen" "all")
+  local valid_tools=("antigravity" "gemini-cli" "opencode" "cursor" "trae" "aider" "windsurf" "openclaw" "qwen" "codex" "all")
   local valid=false
   for t in "${valid_tools[@]}"; do [[ "$t" == "$tool" ]] && valid=true && break; done
   if ! $valid; then
@@ -470,7 +498,7 @@ main() {
 
   local tools_to_run=()
   if [[ "$tool" == "all" ]]; then
-    tools_to_run=("antigravity" "gemini-cli" "opencode" "cursor" "trae" "aider" "windsurf" "openclaw" "qwen")
+    tools_to_run=("antigravity" "gemini-cli" "opencode" "cursor" "trae" "aider" "windsurf" "openclaw" "qwen" "codex")
   else
     tools_to_run=("$tool")
   fi

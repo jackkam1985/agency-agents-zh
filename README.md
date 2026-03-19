@@ -15,7 +15,7 @@ Chinese community edition of [agency-agents](https://github.com/msitarzewski/age
 
 | 🤖 AI 智能体 | 🌏 英文版翻译 | 🇨🇳 中国市场原创 | 🧠 支持工具 |
 |:---:|:---:|:---:|:---:|
-| **180** | **135** | **45** | **11 种** |
+| **180** | **135** | **45** | **12 种** |
 
 ---
 
@@ -29,7 +29,7 @@ Chinese community edition of [agency-agents](https://github.com/msitarzewski/age
 
 ### 方式一：一键安装到你的 AI 工具
 
-支持 **11 种主流 AI 编程工具**，一条命令搞定：
+支持 **12 种主流 AI 编程工具**，一条命令搞定：
 
 ```bash
 # 自动检测已安装的工具，一键安装
@@ -47,6 +47,7 @@ Chinese community edition of [agency-agents](https://github.com/msitarzewski/age
 ./scripts/install.sh --tool antigravity    # Antigravity
 ./scripts/install.sh --tool gemini-cli     # Gemini CLI
 ./scripts/install.sh --tool qwen           # Qwen Code
+./scripts/install.sh --tool codex          # Codex CLI
 ```
 
 > 部分工具需要先运行 `./scripts/convert.sh` 转换格式，详见下方工具集成说明。
@@ -438,7 +439,7 @@ cp -r marketing/*.md ~/.claude/agents/
 
 ## 工具集成
 
-支持 **11 种主流 AI 编程工具**，通过 `scripts/` 目录下的脚本实现格式转换和一键安装。
+支持 **12 种主流 AI 编程工具**，通过 `scripts/` 目录下的脚本实现格式转换和一键安装。
 
 ### 支持的工具
 
@@ -455,6 +456,7 @@ cp -r marketing/*.md ~/.claude/agents/
 | **OpenCode** | `.opencode/agents/` | 项目级，需转换 |
 | **Aider** | `CONVENTIONS.md` | 项目级，需转换 |
 | **Windsurf** | `.windsurfrules` | 项目级，需转换 |
+| **Codex CLI** | `.codex/agents/` | 项目级，需转换 |
 
 ### 使用方法
 
@@ -624,6 +626,20 @@ cd /your/project
 cd /your/project
 /path/to/agency-agents-zh/scripts/install.sh --tool windsurf
 ```
+</details>
+
+<details>
+<summary><strong>Codex CLI</strong></summary>
+
+转换为 OpenAI Codex CLI agent 文件（TOML 格式）并安装到项目目录 `.codex/agents/`。
+
+```bash
+./scripts/convert.sh --tool codex
+cd /your/project
+/path/to/agency-agents-zh/scripts/install.sh --tool codex
+```
+
+在 Codex 中使用时，智能体会作为 subagent 被调用。也可以在 `AGENTS.md` 中引用。
 </details>
 
 ### 修改智能体后重新生成
