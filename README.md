@@ -17,10 +17,6 @@
 |:---:|:---:|:---:|:---:|:---:|
 | **211** | **165** | **46** | **16 种** | **18 个** |
 
-### ⭐ Star 趋势
-
-[![Star History Chart](https://api.star-history.com/svg?repos=jnMetaCode/agency-agents-zh&type=Date)](https://star-history.com/#jnMetaCode/agency-agents-zh&Date)
-
 ---
 
 ## 🚀 Agency Orchestrator — 让角色库真正跑起来
@@ -899,3 +895,9 @@ MIT License — 自由使用，商业或个人均可。
 基于 [agency-agents](https://github.com/msitarzewski/agency-agents) 翻译并本土化
 
 </div>
+
+---
+
+## ⭐ Star 趋势
+
+[![Star History Chart](https://api.star-history.com/svg?repos=jnMetaCode/agency-agents-zh&type=Date)](https://star-history.com/#jnMetaCode/agency-agents-zh&Date)
